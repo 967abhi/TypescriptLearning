@@ -68,7 +68,7 @@
 // // favoriteActivites=['sports',1];
 // // console.log(person,favoriteActivites);
 
-function sendAnalytics(data){
+function sendAnalytics(data:string){
     console.log(data);
 };
 sendAnalytics('this is abhishek')
