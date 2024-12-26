@@ -1,21 +1,19 @@
 {
-  "name": "learner",
+  "name": "understanding-typescript",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Understanding TypeScript Course Setup",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon dist/app.js"
+    "start": "lite-server"
   },
-  "author": "",
+  "keywords": [
+    "typescript",
+    "course"
+  ],
+  "author": "Maximilian Schwarzmüller",
   "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "body-parser": "^1.20.3",
-    "express": "^4.21.2"
-  },
   "devDependencies": {
-    "@types/express": "^5.0.0",
-    "@types/node": "^22.10.2",
-    "nodemon": "^3.1.9"
+    "lite-server": "^2.5.4"
   }
 }
