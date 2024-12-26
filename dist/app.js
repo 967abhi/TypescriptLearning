@@ -1,12 +1,12 @@
 "use strict";
-class Department {
-    constructor(n) {
-        this.name = n;
-    }
-    describe() {
-        console.log('Departement' + this.name);
-    }
-}
-const accounting = new Department('Acoounting');
-console.log(accounting);
-accounting.describe();
+var __importDefault =
+  (this && this.__importDefault) ||
+  function (mod) {
+    return mod && mod.__esModule ? mod : { default: mod };
+  };
+Object.defineProperty(exports, "__esModule", { value: true });
+// import express from
+// const express =require('express')
+const express_1 = __importDefault(require("express"));
+const app = (0, express_1.default)();
+app.listen(3000);

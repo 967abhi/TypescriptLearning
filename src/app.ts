@@ -1,15 +1,13 @@
-class Department{
-    name:string;
-    constructor(n:string){
-        this.name=n;
+// import express from
+// const express =require('express')
+import express, { NextFunction }  from "express";
+import todoRoutes from "./routes/todo"
+import {json} from "body-parser";
 
-    }
-    describe(){
-        console.log('Departement'+this.name)
-    }
-
-}
-const accounting=new Department('Acoounting');
-console.log(accounting)
-accounting.describe();
-
+const app=express();
+app.use(json());
+app.use('/',todoRoutes);
+app.use((err:Error,req:express.Request,res:express.Response,next:NextFunction)=>{
+    res.status(500).json({message:"Error found",err})
+})
+app.listen(3000);
